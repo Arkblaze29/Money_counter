@@ -5,6 +5,8 @@ function calculate_total(note, number) {
 let grand_total = 0;
 let transaction_count = 0;
 let transaction_history = [];
+console.log("Welcome to Shang Wei's Money Counter");
+console.log("====================================");
 while (true) {
   let note = readlineSync.question("Enter the type of note: ");
   note = parseInt(note);
@@ -45,4 +47,5 @@ while (i < transaction_history.length) {
   let t = transaction_history[i];
   console.log(`  ${i + 1}. ${t.number} x $${t.note} notes = $${t.total}`);
   i++;
+console.log("Thank you for using Shang Wei's Money Counter!");
 }
